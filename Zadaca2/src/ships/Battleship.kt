@@ -1,0 +1,4 @@
+package ships
+
+class Battleship {
+}
