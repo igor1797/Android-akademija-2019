@@ -13,7 +13,7 @@ fun main() {
     var br = 0;
     val randomValues = List(100) { Random.nextInt(1, 100) }
     println(randomValues)
-    println("//Separator//")
+    println("\n\n")
     while(randomValues[br]>10) {
         print("${randomValues[br]} ")
         br++
