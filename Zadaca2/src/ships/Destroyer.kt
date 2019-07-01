@@ -3,7 +3,7 @@ import Ship
 import DirectionOfShip
 import Point
 
-class AircraftCarrier(
+class Destroyer (
     name: String,
     size: Int
 ): Ship(name,size) {

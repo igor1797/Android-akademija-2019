@@ -1,2 +1,3 @@
-class DirectionOfShip {
+enum class DirectionOfShip {
+    VERTICAL, HORIZONTAL
 }
