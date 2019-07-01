@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CVapplication</string>
+    <string name="informations_about_me">I\'m the third year student of computer science at FERIT. I like playing soccer. I\'m
+        currently hosting Android Academy.
+    </string>
+    <string name="aboutMe">ABOUT ME</string>
+    <string name="informations_education">I graduated from elementary school Mate Lovraka in Kutina, secondary technical
+        school in Kutina - computer science course. And I\'m currently a third year student of computer science at
+        FERIT.
+    </string>
+    <string name="education">EDUCATION</string>
+    <string name="email">kuridza.igor@gmail.com</string>
+    <string name="phone">0983546242</string>
+    <string name="location">Đure Deželića 53, Kutina</string>
+    <string name="textView_ime">Igor Kuridža</string>
+</resources>
