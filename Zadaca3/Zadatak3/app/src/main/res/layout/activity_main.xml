@@ -1,19 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".activities.MainActivity"
+        android:background="@color/colorBackground"
+>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95"/>
+        <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:background="@color/colorView"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/guideline1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/buttonCalculateIBM"
+                android:layout_marginTop="20dp"
+        />
+        <TextView
+                android:id="@+id/textViewHeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_height"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/guideline1"
+                app:layout_constraintTop_toTopOf="@id/view"
+                app:layout_constraintBottom_toTopOf="@id/editTextHeight"
+        />
+        <EditText
+                android:id="@+id/editTextHeight"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:hint="@string/hint_height_m"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/textViewHeight"
+                app:layout_constraintBottom_toTopOf="@id/textViewWeight"
+        />
+        <TextView
+                android:id="@+id/textViewWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_weight"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/editTextHeight"
+                app:layout_constraintBottom_toTopOf="@id/editTextWeight"
+        />
+        <EditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_weight_kg"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/textViewWeight"
+                app:layout_constraintBottom_toBottomOf="@id/view"
+        />
+        <Button
+                android:id="@+id/buttonCalculateIBM"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_calculate_ibm"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                app:layout_constraintBottom_toTopOf="@id/imageViewIBMresult"/>
+        <ImageView
+                android:id="@+id/imageViewIBMresult"
+                android:layout_width="150dp"
+                android:layout_height="280dp"
+                android:src="@drawable/pothranjen"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/textViewIBMbodyMassResult"
+                app:layout_constraintStart_toEndOf="@+id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/buttonCalculateIBM"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:id="@+id/textViewIBMindexResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/imageViewIBMresult"
+                app:layout_constraintTop_toBottomOf="@id/buttonCalculateIBM"
+                app:layout_constraintBottom_toTopOf="@id/textViewIBMbodyMassResult"
+        />
+        <TextView
+                android:id="@+id/textViewIBMbodyMassResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/imageViewIBMresult"
+                app:layout_constraintTop_toBottomOf="@id/textViewIBMindexResult"
+                app:layout_constraintBottom_toTopOf="@id/textViewIBMdescriptionResult"
+        />
+        <TextView
+                android:id="@+id/textViewIBMdescriptionResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/imageViewIBMresult"
+                app:layout_constraintTop_toBottomOf="@id/textViewIBMbodyMassResult"
+                app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

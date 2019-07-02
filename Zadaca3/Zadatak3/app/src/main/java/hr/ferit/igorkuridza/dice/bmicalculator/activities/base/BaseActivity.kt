@@ -1,4 +1,4 @@
-package hr.ferit.igorkuridza.dice.bmicalculator.base
+package hr.ferit.igorkuridza.dice.bmicalculator.activities.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

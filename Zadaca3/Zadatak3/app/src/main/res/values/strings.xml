@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
+    <string name="pretio">OBESE</string>
+    <string name="debeo">FAT</string>
+    <string name="zdrav">HEALTHY</string>
+    <string name="pothranjen">UNDERNOURISHED</string>
+    <string name="opisPothranjen">Contact your doctor to increase your body weight.</string>
+    <string name="opisPretio">Contact your doctor to reduce body weight and your risk of developing related diseases.</string>
+    <string name="opisZdrav">Get healthy and exercise with physical activity to maintain it.</string>
+    <string name="opisDebeo">You have excessive body weight. Contact your doctor to reduce it.</string>
+    <string name="toastMessage">Please check your inputs</string>
+    <string name="hint_weight_kg">weight [kg]</string>
+    <string name="hint_height_m">height [m]</string>
+    <string name="textView_height">Enter your height in meters:</string>
+    <string name="textView_weight">Enter your weight in kilograms:</string>
+    <string name="button_calculate_ibm">Calculate IBM</string>
+    <string name="textCheckBoundaries">Inputs are not within boundaries</string>
+    <string name="textCheckEmpty">Inputs can\'t be empty</string>
 </resources>
