@@ -1,4 +1,4 @@
-package hr.ferit.igorkuridza.diceroller
+package hr.ferit.igorkuridza.dice.diceroller
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("hr.ferit.igorkuridza.diceroller", appContext.packageName)
+        assertEquals("hr.ferit.igorkuridza.dice.diceroller", appContext.packageName)
     }
 }

@@ -1,4 +1,4 @@
-package hr.ferit.igorkuridza.diceroller
+package hr.ferit.igorkuridza.dice.diceroller
 
 import org.junit.Test
 

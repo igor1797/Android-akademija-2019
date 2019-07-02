@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "hr.ferit.igorkuridza.diceroller"
+        applicationId "hr.ferit.igorkuridza.dice.diceroller"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
