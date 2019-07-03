@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import hr.ferit.igorkuridza.taskiefragments.R
 import hr.ferit.igorkuridza.taskiefragments.persistence.Repository
 import hr.ferit.igorkuridza.taskiefragments.ui.fragments.base.BaseFragment
-import hr.ferit.igorkuridza.taskiefragments.adapters.TaskAdapter
+import hr.ferit.igorkuridza.taskiefragments.ui.adapters.TaskAdapter
 import hr.ferit.igorkuridza.taskiefragments.common.EXTRA_SCREEN_TYPE
 import hr.ferit.igorkuridza.taskiefragments.common.EXTRA_TASK_ID
 import hr.ferit.igorkuridza.taskiefragments.common.gone

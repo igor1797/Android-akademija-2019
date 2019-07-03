@@ -1,4 +1,4 @@
-package hr.ferit.igorkuridza.taskiefragments.adapters
+package hr.ferit.igorkuridza.taskiefragments.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

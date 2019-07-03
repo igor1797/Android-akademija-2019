@@ -1,9 +1,8 @@
-package hr.ferit.igorkuridza.taskiefragments.adapters
+package hr.ferit.igorkuridza.taskiefragments.ui.adapters
 
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
-import androidx.core.graphics.drawable.WrappedDrawable
 import androidx.recyclerview.widget.RecyclerView
 import hr.ferit.igorkuridza.taskiefragments.model.Task
 import kotlinx.android.extensions.LayoutContainer

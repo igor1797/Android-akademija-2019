@@ -1,4 +1,4 @@
-package hr.ferit.igorkuridza.taskiefragments.adapters
+package hr.ferit.igorkuridza.taskiefragments.ui.adapters
 
 import android.content.Context
 import androidx.fragment.app.FragmentManager
@@ -9,8 +9,8 @@ import hr.ferit.igorkuridza.taskiefragments.ui.fragments.about.AboutAuthorFragme
 
 class ViewPagerAdapter(manager: FragmentManager, context: Context): FragmentPagerAdapter(manager,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 
-    private val aboutAuthorFragment = AboutAuthorFragment.newInstance()
-    private val aboutApplicationFragment = AboutApplicationFragment.newInstance()
+    private val aboutAuthorFragment by lazy { AboutAuthorFragment.newInstance()}
+    private val aboutApplicationFragment by lazy { AboutApplicationFragment.newInstance()}
 
     private val fragmentList = arrayListOf(aboutApplicationFragment,aboutAuthorFragment)
     private val titleList = arrayListOf(
