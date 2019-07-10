@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Taskie</string>
+    <string name="newTaskHeadingText">New task:</string>
+    <string name="newTaskTitleInputHint">Enter task title</string>
+    <string name="newTaskDescriptionInputHint">Enter task description</string>
+    <string name="lowPriority">Low</string>
+    <string name="mediumPriority">Medium</string>
+    <string name="highPriority">High</string>
+    <string name="saveTaskActionText">Save</string>
+    <string name="emptyFields">Check your inputs</string>
+    <string name="noTaskFound">No such task found</string>
+    <string name="no_data">No data! :(</string>
+    <string name="taskies">Taskies</string>
+    <string name="about">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutAuthor">I am Igor Kuridža.</string>
+    <string name="aboutApplication">This application is for saving tasks you need to do.</string>
+    <string name="sort_by_priority">Sort by priorityColor</string>
+    <string name="clear_all_tasks">Clear all tasks</string>
+    <string name="save_changes">Save changes</string>
+    <string name="change_task">Change task</string>
+    <string name="positiveAlertButtonText">YES</string>
+    <string name="negativeAlertButtonText">NO</string>
+    <string name="alertDialogTitleDeleteAll">DELETE ALL TASKS?</string>
+    <string name="toastTextForEmptyRepository">There is nothing to delete</string>
+    <string name="alertDialogTitleDeleteOneItem">DELETE?</string>
+
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="logout">LOGOUT</string>
+    <string name="signOut">SIGN OUT</string>
+    <string name="goToRegister">Not a member? Sign up now.</string>
+    <string name="goTologin">Already registered! Login Me.</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="nothingToSort_text">There are nothing to sort!</string>
+    <string name="nothingToDelete_text">There are nothing to delete!</string>
+    <string name="noInternetText">No internet connection!</string>
+
+</resources>
